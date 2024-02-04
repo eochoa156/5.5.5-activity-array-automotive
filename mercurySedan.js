@@ -5,6 +5,13 @@ const VehicleModule = require("./vehicleBaseClass")
 let v = new VehicleModule.Vehicle("Mercury", "Sedan", "1965", "color", "mileage");
 console.log(v.make)
 
+class Car {
+    constructor (make, model, year){
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+}
 
 //After you write the derived Car class, you should test it out.
 
