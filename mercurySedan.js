@@ -24,9 +24,34 @@ class Car extends VehicleModule{
         this.scheduleService = false;
     }
 }
-
-
-
+loadPassenger(num){
+    if (this.passanger + num <= this.maxPassenger){
+        console.log("Can take all passengers");
+    }
+    else {
+        console.log("Too many passengers");
+    }
+}
+start(){
+    if (this.fuel > 0){
+        this.start = true;
+        console.log ("Car is started");
+    }
+    else {
+        console.log ("Not enough fuel");
+    }
+}
+service(){
+    if (this.milage > 30000){
+        this.scheduleService = true;
+    console.log ("time for maitenance");
+    }
+    else {
+        console.log ("no maitenance needed")
+    }
+}
+let newJaguar = new Car ("Jaguar", "Turbo XE", "2020", "Red", 20000)
+let newJeep = new Car ("Jeep", "Wrangler", "Black", "2021", 40000)
 
 
 
